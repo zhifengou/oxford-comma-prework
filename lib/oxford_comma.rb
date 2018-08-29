@@ -1,7 +1,9 @@
 def oxford_comma(array)
 if array.size==1 
   return array.join()
-else
+elsif array.size==2 
+  return "#{array[0]} and #{array[1]}"
+else 
 arr1=array.pop()
 arr2=array.join(", ")
 arr3=", and "+arr1
