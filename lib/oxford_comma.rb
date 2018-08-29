@@ -1,6 +1,7 @@
 def oxford_comma(array)
-array.each do |each|
-if (array[array.size])
+newArr=[]
+array.each_with_index do |val,index|
+if (index==array.size-2)
   array.join("and ")
 else
   array.join(", ")
